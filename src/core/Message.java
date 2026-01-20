@@ -1,5 +1,6 @@
+package core;
+
 import java.io.Serializable;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -51,7 +52,7 @@ public class Message implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("Message{key='%s', value='%s', timestamp=%d, offset=%d}",
+        return String.format("core.Message{key='%s', value='%s', timestamp=%d, offset=%d}",
                 key, value, timestamp, offset);
     }
     public int getPartitionHash() {
